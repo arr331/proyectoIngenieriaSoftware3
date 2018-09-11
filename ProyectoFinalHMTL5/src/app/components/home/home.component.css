@@ -183,6 +183,7 @@ BODY, HTML
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+      
     -webkit-backface-visibility: hidden;
   }
   #intro .item .logo {
@@ -484,6 +485,27 @@ BODY, HTML
 	margin: 40px 0;
 	text-align: left;
   }
+
+  .form-filtro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-filtro .form-group {
+  flex-grow: 1;
+  padding: 0 5px 0 0;
+  flex-basis: 10%;
+}
+
+.form-filtro .form-control {
+  width: 100%;
+}
+
+.form-filtro .form-nowrap {
+  white-space: nowrap;
+}
+
   .testimonials .item {
 	list-style-type: none;
 	margin: 0 5px;
@@ -517,28 +539,7 @@ BODY, HTML
 	color: #999999;
 	margin-bottom: 40px;
   }
-  .testimonials .item .testimonial .bottom {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 20px;
-	height: 50px;
-  }
-  .testimonials .item .testimonial .bottom .icon {
-	color: #5091da;
-	font-size: 30px;
-	float: left;
-	width: 20%;
-  }
-  @media (max-width: 350px) {
-	.testimonials .item .testimonial .bottom .icon {
-	  display: none;
-	}
-  }
+ 
   .testimonials .item .testimonial .name-picture {
 	float: right;
 	width: 80%;

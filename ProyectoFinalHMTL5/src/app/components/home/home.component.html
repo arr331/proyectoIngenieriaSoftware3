@@ -21,9 +21,9 @@ _________________________________________________________ -->
                     </li>
                     <li><a href="#services">Servicios</a>
                     </li>
-                    <li><a href="#testimonials">Reservas</a>
+                    <li><a href="#testimonials">Busquedas</a>
                     </li>
-                    <li><a href="#references">Autores</a>
+                    <li><a href="#references">Reservas</a>
                     </li>
                     <li><a href="#customers">Estudiantes</a>
                     </li>
@@ -126,31 +126,56 @@ _________________________________________________________ -->
                 <div class="col-md-12">
 
                     <div class="mb20">
-                        <h2 class="title" data-animate="fadeInUp">los estudiantes opinan<br /><span>sobre nuestro sitio web</span></h2>
+                        <h2 class="title" data-animate="fadeInUp">Aquí encontrara el parqueadero<br /><span>de su preferencia</span></h2>
 
-                        <p class="lead text-center" data-animate="fadeInUp">Siempre nos alegra saber que los estudiantes se van satisfechos. Algunos de ellos compartieron con ustedes sus opiniones sobre nuestra plataforma.</p>
-                    </div>
 
-                    <ul class="owl-carousel testimonials same-height-row" data-animate="fadeInUp">
-                        <li class="item">
-                            <div class="testimonial same-height-always">
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                         nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-                                          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-                                </div>
-                                <div class="bottom">
-                                    <div class="icon"><i class="fa fa-quote-left"></i>
-                                    </div>
-                                    <div class="name-picture">
-                                        <img class="" alt="" src="./assets/img/person-1.jpg">
-                                        <h5>Nombre Estudiante</h5>
-                                        <p>Ciudad</p>
-                                    </div>
-                                </div>
+                    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+                    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+                    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+                    <!------ Include the above in your HEAD tag ---------->
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <form class="form-inline form-filtro">
+                            <div class="form-group">
+                              <label class="sr-only" for="filtro-data-inicial">Data inicial</label>
+                              <input type="date" class="form-control" id="filtro-data-inicial">
                             </div>
-                        </li>
-                    </ul>
+                            <div class="form-group">
+                              <label class="sr-only" for="filtro-data-final">Data final</label>
+                              <input type="date" class="form-control" id="filtro-data-final">
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="filtro-tipo">Ciudad</label>
+                              <select class="form-control" id="filtro-tipo">
+                                <option value="">Medellin</option>
+                                <option value="">Bogota</option>
+                                <option value="">Cartagena</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="filtro-conta">Tipo vehículo</label>
+                                <select class="form-control" id="filtro-conta">
+                                <option value="">Moto</option>
+                                <option value="">Automovil</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="filtro-categoria">Categoria</label>
+                              <select class="form-control" id="filtro-categoria">
+                                <option value="">Categoria</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-primary">Filtrar</button>
+                              <button type="reset" class="btn btn-default">Limpar</button>
+                            </div>
+                          </form>
+                            </div>
+                        </div>
+                    </div>
                     <!-- /.owl-carousel -->
                 </div>
                 <!-- /.12 -->
