@@ -27,6 +27,8 @@ _________________________________________________________ -->
                     </li>
                     <li><a href="#contact">contacto</a>
                     </li>
+                    <li><a href="#contant">Registrarse</a>
+                    <li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -42,6 +44,7 @@ _________________________________________________________ -->
 
 
         <!-- *** INTRO IMAGE ***
+    
 _________________________________________________________ -->
         <div id="intro" class="clearfix">
             <div class="item">
@@ -121,7 +124,7 @@ _________________________________________________________ -->
                 <div class="col-md-12">
 
                     <div class="mb20">
-                        <h2 class="title" data-animate="fadeInUp">Aquí encontrara el parqueadero<br /><span>de su preferencia</span></h2>
+                        <h2 class="title" data-animate="fadeInUp">Aquí encontrará el parqueadero<br /><span>de su preferencia</span></h2>
 
 
                     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -230,14 +233,7 @@ _________________________________________________________ -->
         <!-- *** REFERENCES END *** -->
 
         <!-- *** CUSTOMERS ***
-_________________________________________________________ -->
-
-        
-        <!-- /.section -->
-
-        <!-- *** CUSTOMERS END *** -->
-
-        <!-- *** QUIZ ***
+            
 _________________________________________________________ -->
 <div class="section text-gradient" id="quiz">
         <div class="container">
@@ -247,7 +243,7 @@ _________________________________________________________ -->
                 <div>
                     <a class="btn btn-default" href="http://saimyr.com/practicahtml5/test/" role="button" target="_blank">Link Cuestionario</a>
                     <a class="btn btn-default" href="http://saimyr.com/practicahtml5/mentefactos/" role="button" target="_blank">Link Mentefactos</a>
-                </div>
+                </div> 
 
             </div>
             <!-- /.12 -->
@@ -277,7 +273,7 @@ _________________________________________________________ -->
 
                                 </div>
 
-                                <div class="controls">
+                                <div class="controls"> 
 
                                     <div class="row">
                                         <div class="col-md-6">
@@ -316,7 +312,7 @@ _________________________________________________________ -->
         <!-- *** CONTACT END *** -->
 
         <!-- *** FOOTER ***
-_________________________________________________________ -->
+____________________________________ -->
 
         <div class="section" id="footer">
             <div class="container">
@@ -354,8 +350,11 @@ _________________________________________________________ -->
 
         <!-- *** FOOTER END *** -->
     </div>
-    <!-- /#all -->
+    <!-- /#all --> 
 <!-- 
     <div>
         <router-outlet></router-outlet>
     </div> -->
+    <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
