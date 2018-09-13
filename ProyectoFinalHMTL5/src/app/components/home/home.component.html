@@ -12,6 +12,7 @@ _________________________________________________________ -->
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand scrollTo" href="#intro">TRICARRO</a>
+                
             </div>
 
             <div class="navbar-collapse collapse" id="navigation">
@@ -26,17 +27,14 @@ _________________________________________________________ -->
                     <li><a href="#references">Reservas</a>
                     </li>
                     <li><a href="#contact">contacto</a>
-                    </li>
-                    <li><a href="#login">Login</a>
-                    <li>
-                    <li><a href="#login">Logout</a>
-                    <li>    
+                    </li>  
                 </ul>
             </div>
             <!--/.nav-collapse -->
 
         </div>
     </div>
+
     <!-- /#navbar -->
 
     <!-- *** NAVBAR END *** -->
@@ -49,6 +47,7 @@ _________________________________________________________ -->
     
 _________________________________________________________ -->
         <div id="intro" class="clearfix">
+            
             <div class="item">
                 <div class="container">
                     <div class="row">
@@ -118,7 +117,6 @@ _________________________________________________________ -->
 
         <!-- *** SERVICES END *** -->
 
-_________________________________________________________ -->
 
         <div class="section text-gray" id="testimonials" data-animate="fadeInUp">
 
@@ -129,9 +127,6 @@ _________________________________________________________ -->
                         <h2 class="title" data-animate="fadeInUp">Aquí encontrará el parqueadero<br /><span>de su preferencia</span></h2>
 
 
-                    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-                    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-                    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
                     <!------ Include the above in your HEAD tag ---------->
 
                     <div class="container">
@@ -221,14 +216,40 @@ _________________________________________________________ -->
                 <div class="col-sm-12">
 
                     <div class="mb20">
-                        <h2 class="title" data-animate="fadeInUp">Equipo de desarrollo</h2>
-                        <p class="lead" data-animate="fadeInUp">Hemos participado en este proyecto web con entusiasmo, así que aportamos de lo mejor de nuestros conocimientos para tí.</p>
+                        <h2 class="title" data-animate="fadeInUp">Reservas</h2>
+                        <p class="lead" data-animate="fadeInUp">Para poder acceder a nuestro servicio de reservas debes tener una cuenta por lo que te invitamos a crear una dando click en el botón "regitrarse" o acceder si ya posees una a través del botón "ingresar".</p>
                     </div>
                     <br><br>
 
                     <!-- Reference detail -->
 
                    
+        <button type="button"class="btn-lg" data-toggle="modal" data-target="#miventana">
+                Ingresar
+        </button>
+            <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                            <h4>Iniciar sesión</h4>
+
+                        </div>
+                        <div class="modal-body">
+                               <form #loginForm="ngForm" (ngSubmit)= login(loginForm) >
+                                    <input type="text" name="email" id="email" placeholder="Email" ngModel>
+                                    <input type="password" name="password" id="password" placeholder="Password" ngModel>
+                                    <button type="submit">Login</button>
+                                  
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button"class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
                     <!-- /#references-masonry -->
 
                 </div>
@@ -322,42 +343,7 @@ _________________________________________________________ -->
         <!-- *** CONTACT END *** -->
 
         <!-- *** FOOTER ***
-____________________________________ -->
 
-
-<div class="section" id="login">
-        <button class="btn btn-info" data-toggle="modal" data-target="#miventana">
-                Abrir ventana
-        </button>
-            <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
-                            <h4>Iniciar sesión</h4>
-
-                        </div>
-                        <div class="modal-body">
-                               jajajaaj que se le hace a esta chimbada pa que no se cierrre al dar click
-                               <form #loginForm="ngForm" (ngSubmit)= login(loginForm) >
-                                    <input type="text" name="email" id="email" placeholder="Email" ngModel>
-                                    <input type="password" name="password" id="password" placeholder="Password" ngModel>
-                                    <button type="submit">Login</button>
-                                  
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button"class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        <!-- /.container -->
-</div>
-    <!-- /.section -->
-
-    <!-- *** REFERENCES END *** -->
 
     <!-- *** CUSTOMERS ***
         
@@ -402,6 +388,8 @@ _________________________________________________________ -->
     <!-- /#all --> 
 <!-- 
     <div>
+
         <router-outlet></router-outlet>
     </div> -->
+
     

@@ -52,6 +52,15 @@ BODY, HTML
   =====================
   
   */
+
+
+/*
+login*/
+.modal-backdrop{
+ position: relative; 
+}
+
+
   .section {
     position: relative;
     padding-top: 60px;

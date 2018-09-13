@@ -54,7 +54,7 @@ import { FormsModule } from '@angular/forms';
     GrowlModule,
     ButtonModule,
     RouterModule.forRoot(APPROUTER),
-        AgmCoreModule.forRoot({
+       AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAexdUynkyyvvyo1aPJAjlRZkzJO6WQL2M'
     })
   ],
