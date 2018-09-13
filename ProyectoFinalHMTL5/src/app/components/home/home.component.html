@@ -254,6 +254,39 @@ _________________________________________________________ -->
                 </div>
 
             </div>
+                     <!-- Boton registrarse -->
+         <button type="button"class="btn-lg" data-toggle="modal" data-target="#registro">
+                Registrarse
+        </button>
+            <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                            <h4>Datos</h4>
+
+                        </div>
+                        <div class="modal-body">
+                           <!--    <form #loginForm="ngForm" (ngSubmit)= login(loginForm) > -->
+                                   <p> <input label="Email" type="text" name="email" id="email" placeholder="Email" ngModel></p>
+                                   <p> <input type="password" name="password" id="password" placeholder="Password" ngModel></p>
+                                   <p> <input type="text" name="nombre" id="name" placeholder="Name" ngModel></p>
+                                   <p> <input type="text" name="apellido" id="surname" placeholder="apellido" ngModel></p>
+                                   <p> <input type="date" name="fechanacimiento" id="fecha" placeholder="fecha" ngModel></p>
+                                   <p> <input type="text" name="Residencia" id="residente" placeholder="Residencia" ngModel></p>
+                                   <p> <input type="number" name="telefono" id="cell" placeholder="Telefono" ngModel></p>
+                                    <button type="submit">Guardar</button>
+                                  
+                           <!--   </form>-->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button"class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                
                     <!-- /#references-masonry -->
 
                 </div>
