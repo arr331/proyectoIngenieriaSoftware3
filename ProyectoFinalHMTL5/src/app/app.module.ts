@@ -52,11 +52,14 @@ import { FormsModule } from '@angular/forms';
     GrowlModule,
     ButtonModule,
     RouterModule.forRoot(APPROUTER),
-    AgmCoreModule.forRoot({
+        AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAexdUynkyyvvyo1aPJAjlRZkzJO6WQL2M'
     })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+}

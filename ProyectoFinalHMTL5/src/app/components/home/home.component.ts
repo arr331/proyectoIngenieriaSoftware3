@@ -9,8 +9,9 @@ import { Command, Key } from 'protractor';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  lat: number = 51.678418;
-  lng: number = 7.809007;
+  lat: number =6.244203;
+  lng: number = -75.58121189999997;
+  zoom: number= 12;
   ubicaciones = [
     {latitud: 232323, longitud:2323}, 
     {latitud: 232323, longitud:2323},

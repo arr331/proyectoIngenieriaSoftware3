@@ -486,6 +486,10 @@ BODY, HTML
 	text-align: left;
   }
 
+agm-map{
+    height: 400px;
+}
+
 .container {
     overflow: hidden;
 }

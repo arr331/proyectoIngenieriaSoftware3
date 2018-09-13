@@ -178,6 +178,12 @@ _________________________________________________________ -->
                 
         </div>
             
+            
+            <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            <agm-marker [latitude]=6.256943332534006 [longitude]=-75.56636810302734 [title]=losolivos [label]="Parque"></agm-marker>   
+            </agm-map>
+            
             <!-- Control buttons -->
                 <div id="myBtnContainer">
                   <button class="btn active" onclick="filterSelection('all')"> Mostrar todo</button>
@@ -393,6 +399,4 @@ _________________________________________________________ -->
     <div>
         <router-outlet></router-outlet>
     </div> -->
-    <agm-map [latitude]="lat" [longitude]="lng">
-        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-    </agm-map>
+    
