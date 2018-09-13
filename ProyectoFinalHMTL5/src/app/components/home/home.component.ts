@@ -11,7 +11,7 @@ import { Command, Key } from 'protractor';
 export class HomeComponent implements OnInit {
   lat: number =6.244203;
   lng: number = -75.58121189999997;
-  zoom: number= 12;
+  zoom: number= 10;
   ubicaciones = [
     {latitud: 232323, longitud:2323}, 
     {latitud: 232323, longitud:2323},

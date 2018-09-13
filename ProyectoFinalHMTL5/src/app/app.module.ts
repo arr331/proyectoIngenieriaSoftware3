@@ -6,26 +6,19 @@ import { OrganizationChartModule, ButtonModule } from 'primeng/primeng';
 import { GrowlModule } from 'primeng/components/growl/growl';
  import { AgmCoreModule } from '@agm/core'; 
 import { AppComponent } from './app.component';
+
 import { OrgUnoComponent } from "./components/org-uno/org-uno.component";
 import { HomeComponent } from './components/home/home.component';
 import { OrgDosComponent } from './components/org-dos/org-dos.component';
-import { TestComponent } from './components/test/test.component';
 import { APPROUTER } from './app.routes';
 import { RouterModule, Routes } from '@angular/router';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
-import { EstudiantesComponent } from './components/estudiantes/estudiantes.component';
 import { AutoresComponent } from './components/autores/autores.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-import { TestimoniosComponent } from './components/testimonios/testimonios.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
-//import { UsuariosComponent } from './components/src/app/components/usuarios/usuarios.component';
-// import { LoginComponent } from './components/src/app/components/login/login.component';
-
-
-
 
 
 @NgModule({
@@ -34,16 +27,13 @@ import { FormsModule } from '@angular/forms';
     OrgUnoComponent,
     HomeComponent,
     OrgDosComponent,
-    TestComponent,
     PrincipalComponent,
     ServiciosComponent,
-    EstudiantesComponent,
     AutoresComponent,
     ContactoComponent,
-    TestimoniosComponent,
     FooterComponent,
     LoginComponent,
-   // UsuariosComponent
+    
   ],
   
   imports: [
