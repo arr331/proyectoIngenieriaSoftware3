@@ -320,30 +320,35 @@ ____________________________________ -->
 
 
 <div class="section" id="login">
-        <div class="container">
-            <div class="col-sm-12">
+        <button class="btn btn-info" data-toggle="modal" data-target="#miventana">
+                Abrir ventana
+        </button>
+            <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                            <h4>Iniciar sesión</h4>
 
-                <div class="mb20">
-                    <h2 class="title" data-animate="fadeInUp">Equipo de desarrollo</h2>
-
-                    <form #loginForm="ngForm" (ngSubmit)= login(loginForm) >
-                            <input type="text" name="email" id="email" placeholder="Email" ngModel>
-                            <input type="password" name="password" id="password" placeholder="Password" ngModel>
-                            <button type="submit">Login</button>
-                          
-                          </form>
+                        </div>
+                        <div class="modal-body">
+                               jajajaaj que se le hace a esta chimbada pa que no se cierrre al dar click
+                               <form #loginForm="ngForm" (ngSubmit)= login(loginForm) >
+                                    <input type="text" name="email" id="email" placeholder="Email" ngModel>
+                                    <input type="password" name="password" id="password" placeholder="Password" ngModel>
+                                    <button type="submit">Login</button>
+                                  
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button"class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
                 </div>
-                <br><br>
-
-                <!-- Reference detail -->
-    
-                <!-- /#login-masonry -->
 
             </div>
-            <!-- /.12 -->
-        </div>
         <!-- /.container -->
-    </div>
+</div>
     <!-- /.section -->
 
     <!-- *** REFERENCES END *** -->

@@ -21,6 +21,7 @@ import { TestimoniosComponent } from './components/testimonios/testimonios.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
+//import { UsuariosComponent } from './components/src/app/components/usuarios/usuarios.component';
 // import { LoginComponent } from './components/src/app/components/login/login.component';
 
 
@@ -41,7 +42,8 @@ import { FormsModule } from '@angular/forms';
     ContactoComponent,
     TestimoniosComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+   // UsuariosComponent
   ],
   
   imports: [
