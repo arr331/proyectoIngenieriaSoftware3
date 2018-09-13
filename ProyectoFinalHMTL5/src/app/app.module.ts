@@ -20,7 +20,11 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { TestimoniosComponent } from './components/testimonios/testimonios.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 // import { LoginComponent } from './components/src/app/components/login/login.component';
+
+
+
 
 
 @NgModule({
@@ -44,6 +48,7 @@ import { LoginComponent } from './components/login/login.component';
     BrowserModule,
     BrowserAnimationsModule,
     OrganizationChartModule,
+    FormsModule,
     GrowlModule,
     ButtonModule,
     RouterModule.forRoot(APPROUTER),

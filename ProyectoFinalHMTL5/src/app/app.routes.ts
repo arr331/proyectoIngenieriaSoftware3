@@ -11,18 +11,14 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { EstudiantesComponent } from './components/estudiantes/estudiantes.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { AutoresComponent } from './components/autores/autores.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 export const APPROUTER: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: 'home', component: HomeComponent},
     { path: 'orguno', component: OrgUnoComponent},
-    { path: 'orgdos', component: OrgDosComponent},
-    // { path: 'test', component: TestComponent},
-    // { path: 'opiniones', component: TestimoniosComponent},
-    // { path: 'servcios', component: ServiciosComponent},
-    // { path: 'estudiantes', component: EstudiantesComponent},
-    // { path: 'contacto', component: ContactoComponent},
-    // { path: 'autores', component: AutoresComponent},
+    { path: 'usuarios', component: OrgDosComponent},
+    { path: 'login', component: LoginComponent},
     { path: '**', redirectTo: 'home', pathMatch: 'full'}   
 ]
